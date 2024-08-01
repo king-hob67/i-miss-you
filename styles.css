@@ -39,7 +39,7 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#rose-popup {
+# "D:\rose.jpg" {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -52,7 +52,7 @@ button:hover {
     display: none;
 }
 
-#rose-popup img {
+# "D:\rose.jpg" {
     width: 100px;
     height: 100px;
     margin: 20px auto;
