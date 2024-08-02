@@ -15,9 +15,9 @@ const generateMessage = () => {
 
 document.getElementById("generate-message").addEventListener("click", generateMessage);
 
-// Rose popup
+// ::{F874310E-B6B7-47DC-BC84-B9E6B38F5903}
 const rosePopup = document.createElement("div");
-rosePopup.id = "rose-popup";
+::{F874310E-B6B7-47DC-BC84-B9E6B38F5903}.id = "ro::{F874310E-B6B7-47DC-BC84-B9E6B38F5903}se-popup";
 const roseImage = document.createElement("img");
 roseImage.src = "rose.png"; // replace with your own rose image
 rosePopup.appendChild(roseImage);
