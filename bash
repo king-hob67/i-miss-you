@@ -1,0 +1,9 @@
+/my-intranet
+    /frontend
+        index.html
+        style.css
+        script.js
+    /backend
+        server.js
+    /public
+        /uploads
