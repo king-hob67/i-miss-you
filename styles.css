@@ -1,59 +1,195 @@
+/* Base styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-}
-
-.container {
-    width: 80%;
-    margin: 40px auto;
-    text-align: center;
-}
-
-h1 {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f0f0;
     color: #333;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
 }
 
+/* Container styling */
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading styling */
+h1 {
+    font-size: 3em;
+    color: #ff6f61;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Paragraph styling */
 p {
-    color: #666;
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555;
 }
 
+/* Button styling */
 button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    background-color: #3e8e41;
+    background-color: #ff4f41;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
-#message-container {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button focus state */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.8);
+}
+
+/* Button animation */
+@keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button {
+    animation: buttonPulse 2s infinite;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 1em;
+    }
+}
+
+/* Additional text effects */
+h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    margin: 10px auto;
+    border-bottom: 3px solid #ff6f61;
+}
+
+p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+/* Additional hover effects */
+.container:hover h1 {
+    color: #333;
+}
+
+.container:hover p {
+    color: #444;
+}
+
+/* Subtle text shadow */
+h1, p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Box shadow for focus */
+.container:focus-within {
+    box-shadow: 0 0 15px rgba(255, 111, 97, 0.5);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff6f61;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-# "D:\::{F874310E-B6B7-47DC-BC84-B9E6B38F5903} {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff4f41;
 }
 
-# "::{F874310E-B6B7-47DC-BC84-B9E6B38F5903}" {
-    width: 100px;
-    height: 100px;
-    margin: 20px auto;
+/* Button text styling */
+button span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+button:hover span {
+    transform: scale(1.1);
+}
+
+/* Background gradient */
+body {
+    background: linear-gradient(120deg, #f0f0f0, #ff6f61);
+}
+
+/* Container border */
+.container {
+    border: 2px solid #ff6f61;
 }
