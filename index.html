@@ -7,12 +7,181 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>I Miss You</h1>
-        <p>Every moment without you is a moment too long.</p>
-        <button id="generate-message">Generate Message</button>
-        <div id="message-container"></div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">I Miss You</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1>Welcome to the I Miss You Page</h1>
+            <p>Every moment without you is a moment too long.</p>
+            <button><span>Generate Message</span></button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About This Page</h2>
+            <p>This page is a tribute to those who are far away from their loved ones. It's a simple way to express how much you miss someone special.</p>
+            <p>Each click of the button generates a heartfelt message to let them know how much they mean to you.</p>
+            <p>Whether you're missing a friend, family member, or significant other, this page offers comfort through words that resonate with your feelings.</p>
+        </div>
+    </section>
+
+    <!-- Messages Section -->
+    <section id="messages" class="messages-section">
+        <div class="container">
+            <h2>Generated Messages</h2>
+            <div class="message-list">
+                <p><strong>Message 1:</strong> I miss you more with each passing day.</p>
+                <p><strong>Message 2:</strong> Distance means so little when someone means so much.</p>
+                <p><strong>Message 3:</strong> Even though we're miles apart, you're always in my heart.</p>
+                <p><strong>Message 4:</strong> The hardest part of missing you is not knowing if you miss me too.</p>
+                <p><strong>Message 5:</strong> I can't wait to see you again, and I hope that day comes soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Gallery</h2>
+            <p>Here are some images that remind us of the special moments we've shared.</p>
+            <div class="image-grid">
+                <img src="image1.jpg" alt="A special moment">
+                <img src="image2.jpg" alt="Another special moment">
+                <img src="image3.jpg" alt="A cherished memory">
+                <img src="image4.jpg" alt="Memories that last a lifetime">
+                <img src="image5.jpg" alt="Good times together">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label for="reason">Reason for Contact:</label>
+                <select id="reason" name="reason" required>
+                    <option value="general">General Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="support">Support</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="subscribe">Subscribe to our newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What is the purpose of this page?</h3>
+                <p>This page is a place to express how much you miss someone. It's designed to provide comfort and share meaningful messages with your loved ones.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I generate a message?</h3>
+                <p>Simply click the "Generate Message" button on the homepage, and a new message will be displayed.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I share these messages on social media?</h3>
+                <p>Yes, you are free to share any message generated on this page. We encourage you to spread the love!</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I contact you for support?</h3>
+                <p>You can fill out the contact form in the Contact section of this page, and we'll get back to you as soon as possible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 I Miss You. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Additional Sections -->
+    <section id="extra-content-1" class="extra-content">
+        <div class="container">
+            <h2>Why Missing Someone is Hard</h2>
+            <p>Missing someone is one of the most challenging emotions. It's a mixture of sadness, longing, and even happiness when you think about the good times you've had with that person.</p>
+            <p>Whether it's a friend, a family member, or a significant other, the feelings of missing someone can be overwhelming. This page is a small comfort, a way to remind yourself and others that they're always in your thoughts.</p>
+        </div>
+    </section>
+
+    <section id="extra-content-2" class="extra-content">
+        <div class="container">
+            <h2>Ways to Cope with Missing Someone</h2>
+            <ul>
+                <li>Stay connected through regular calls or messages.</li>
+                <li>Keep yourself busy with activities you enjoy.</li>
+                <li>Write letters or journals to express your feelings.</li>
+                <li>Plan a visit or set a date to see each other again.</li>
+                <li>Remember the good times and look forward to making new memories.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="extra-content-3" class="extra-content">
+        <div class="container">
+            <h2>Inspirational Quotes About Missing Someone</h2>
+            <blockquote>
+                <p>"The pain of parting is nothing to the joy of meeting again." - Charles Dickens</p>
+            </blockquote>
+            <blockquote>
+                <p>"How lucky I am to have something that makes saying goodbye so hard." - A.A. Milne, Winnie-the-Pooh</p>
+            </blockquote>
+            <blockquote>
+                <p>"Missing someone and not being able to see them is the worst feeling ever." - Nathanael Richmond</p>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="extra-content-4" class="extra-content">
+        <div class="container">
+            <h2>Share Your Stories</h2>
+            <p>We would love to hear your stories about missing someone special. Feel free to share your experiences and how you cope with missing someone. Your stories can provide comfort and inspiration to others who might be going through the same thing.</p>
+            <button>Share Your Story</button>
+        </div>
+    </section>
+
+    <section id="extra-content-5" class="extra-content">
+        <div class="container">
+            <h2>Stay Positive
